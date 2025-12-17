@@ -40,6 +40,6 @@ app.get("/offers", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 8080), () => {
   console.log("API rodando na porta " + PORT);
 });
